@@ -1,0 +1,73 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home | Automate</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/home.css">
+    <script src="/static/js/jquery.js"></script>
+    <script src="/static/js/home.js"></script>
+</head>
+
+<body>
+    <div id="menu">
+        <div id="tabs">
+            <button id="a">Automate</button>
+            <button id="b">Settings</button>
+            <button id="c">About</button>
+        </div>
+    </div>
+    <div id="main">
+        <div id="automate">
+            <div id="listen">
+                {% csrf_token %}
+                <button id="start_listening"><img src="/static/images/login.png"></button>
+            </div>
+            <div id="chat">
+
+            </div>
+            <div id="talk">
+                <input type="text">
+                <button>Submit</button>
+            </div>
+        </div>
+        <div id="settings">
+            <h1>Settings</h1>
+        </div>
+        <div id="about">
+            <h3>Created by</h3>
+            <ul>
+                <li>Abhinav Dhoka</li>
+                <li>Shreyash Talwekar</li>
+                <li>Aadit Damle</li>
+                <li>Pranit Shelke</li>
+            </ul>
+            <hr>
+            <table>
+                <tr>
+                    <th>Website</th>
+                    <th>Keyword</th>
+                </tr>
+                <tr>
+                    <td>Youtube</td>
+                    <td>youtube</td>
+                </tr>
+                <tr>
+                    <td>Wikipedia</td>
+                    <td>wikipedia</td>
+                </tr>
+                <tr>
+                    <td>Map</td>
+                    <td>directions for</td>
+                </tr>
+                <tr>
+                    <td>Gmail</td>
+                    <td>gmail NAME</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
